@@ -1,3 +1,4 @@
+import 'package:fetch_api/providers/providers.dart';
 import 'package:fetch_api/screens/comment.dart';
 
 import 'package:fetch_api/screens/home.dart';
@@ -8,9 +9,11 @@ import 'package:fetch_api/screens/setting.dart';
 import 'package:fetch_api/Components/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ChangeNotifierProvider(
+      create: (context) => FetchProvider(), child: const MyApp()));
 }
 
 class MyApp extends StatefulWidget {

@@ -16,20 +16,21 @@ class Details extends StatelessWidget {
 
   // final String address;
 
-  const Details(
-      {super.key,
-      required this.name,
-      // required this.address,
-      required this.uname,
-      required this.id,
-      required this.email,
-      required this.posts,
-      required this.companyname,
-      required this.companyDetail,
-      required this.imageurl,
-      required this.body,
-      required this.userid,
-      required this.title});
+  const Details({
+    super.key,
+    required this.name,
+    required this.id,
+    required this.uname,
+    required this.email,
+    required this.companyname,
+    required this.companyDetail,
+    required this.imageurl,
+    required this.posts,
+    required this.title,
+    required this.body,
+    required this.userid,
+    // required this.address,
+  });
 
   @override
   Widget build(BuildContext context) {
